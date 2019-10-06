@@ -1,4 +1,8 @@
 body{
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',Meiryo, メイリオ, sans-serif;
+  font-size: 16px;
+}
+body{
     color: #333;
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -6,45 +10,98 @@ body{
   
   header{
     background-color: #efefef;
-    padding-top: 32px;
-    padding-bottom: 32px;
+		padding: 0px;
     align-items: center;
   }
   
-  .title {
-    background-color: pink;
-    /* width: 400px; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    display: flex;
-    /* align-items: center; */
-  }
-  .subtitle {
-    background-color: skyblue;
-    /* width: 400px; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    display: flex;
-    
-    /* align-items: center; */
-  }
-  .title h1 {
-  margin: 0;
-  }
-  .title p {
-  margin: 0;
-  }
+	#logo {
+		width: 100px;
+		height: 100px;
+		background: rgb(135, 235, 157);
+		border-radius: 40%;
+		cursor: pointer;
+		margin: 0
+	}
 
- /*タブ切り替え全体のスタイル*/
+
+/*メニューの設定*/
+#menu{
+  /*clear: both;*/
+  width: 100%;
+  /* max-width: 960px; */
+  margin: 0 auto;
+  padding: 0;
+	list-style-type: none;
+}
+
+#menu li{
+  float: left;
+  width: calc(100%/3);
+  margin: 0;
+  padding: 0;
+	text-align: center; 
+}
+
+#menu li a{ 
+  width: auto;
+  color: #fff;
+  background: #529ea3;
+  /* background-image: -webkit-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2)); */
+	display: block;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px;
+  text-decoration: none;
+  /* text-shadow: 0 1px 1px rgba(0,0,0,0.9); */
+
+  border-left: 1px solid rgba(255,255,255,0.2);
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+/*#menu li:first-child a {
+  border-left: 0px;
+  border-radius: 5px 0 0 5px;
+}
+#menu li:last-child a {
+  border-right: 0px;
+  border-radius: 0 5px 5px 0;
+}*/
+
+#menu li a:hover{
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  background-image: -o-linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+}
+
+#menu li a.current {
+  background-color: pink;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/*ここまでがメニューの設定*/
+
+
+
+ /* タブ切り替え全体のスタイル
 .tabs {
     margin-top: 50px;
     padding-bottom: 40px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 700px;
+    width:  1000px;
     margin: 0 auto;}
   
-  /*タブのスタイル*/
+  タブのスタイル
   .tab_item {
     width: calc(100%/3);
     height: 50px;
@@ -64,12 +121,12 @@ body{
     opacity: 0.75;
   }
   
-  /*ラジオボタンを全て消す*/
+  ラジオボタンを全て消す
   input[name="tab_item"] {
     display: none;
   }
   
-  /*タブ切り替えの中身のスタイル*/
+  タブ切り替えの中身のスタイル
   .tab_content {
     display: none;
     padding: 40px 40px 0;
@@ -78,15 +135,15 @@ body{
   }
   
   
-  /*選択されているタブのコンテンツのみを表示*/
+  選択されているタブのコンテンツのみを表示
   #top:checked ~ #top_content,
   #intro:checked ~ #intro_content,
   #mail:checked ~ #mail_content {
     display: block;
   }
   
-  /*選択されているタブのスタイルを変える*/
+  選択されているタブのスタイルを変える
   .tabs input:checked + .tab_item {
     background-color: #5ab4bd;
     color: #fff;
-  }
+  } */
