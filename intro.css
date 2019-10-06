@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+html , body{
+  height: 100%;
+  background-image: url('img/background1.gif');
+}
+
+body{
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',Meiryo, メイリオ, sans-serif;
+  font-size: 16px;
+}
+
+body >#container{
+  height: auto;
+}
+
+#container{
+  background-image: url('img/background2.gif');
+	width: 100%;
+  max-width: 960px;
+	margin: 0 auto;
+	border-left: thin solid #B9BAB4;
+	border-right: thin solid #B9BAB4;
+  height: 100%; /*for IE6*/
+  min-height: 100%;
+}
+
+a{
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus{
+  outline: none;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 36px;
+}
+
+h2{
+  font-size: 18px;
+}
+
+h3{
+  font-size: 16px;
+}
+/*ここまでが全体の設定*/
+
+/*ヘッダーの設定*/
+header{
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+
+#name{
+  margin-left: 10px;
+}
+
+#name h3{
+  padding-bottom: 3px;
+}
+
+#english{
+  padding-top: 25px;
+  margin-right: 10px;
+  float: right;
+}
+
+#english a{
+  font-size: 18px;
+  color: #222;
+}
+
+#english a:hover{
+  text-decoration: none;
+  color: #ae2b2b;
+}
+/*ここまでがヘッダーの設定*/
+
+/*メニューの設定*/
+#menu{
+  /*clear: both;*/
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+#menu li{
+  float: left;
+  width: 12.5%;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+}
+
+#menu li a{ 
+  /* width: auto; */
+  color: #fff;
+  background: #228b22;
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+  background-image: -o-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.9);
+  display: block;
+  border-left: 1px solid rgba(255,255,255,0.2);
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+/*#menu li:first-child a {
+  border-left: 0px;
+  border-radius: 5px 0 0 5px;
+}
+#menu li:last-child a {
+  border-right: 0px;
+  border-radius: 0 5px 5px 0;
+}*/
+
+#menu li a:hover{
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  background-image: -o-linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+}
+
+#menu li a.current {
+  background-color: #114711;
+}
+
+/* .fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; */
+}
+/*ここまでがメニューの設定*/
+
+/*フッターの設定*/
+footer{
+  clear: both;
+  padding: 10px 20px 10px;
+  border-top: 1px solid gray;
+}
+
+#aboutus{
+  width: 62%;
+  float: left;
+  padding-right: 20px;
+}
+
+#contact{
+  width: 36%;
+  float: right;
+}
+
+.foot{
+  padding-bottom: 7px;
+}
+
+#copyright{
+  text-align: center;
+  clear: both;
+  padding-top: 5px;
+}
+/*ここまでがフッターの設定*/
+
+/*スライダーの設定*/
+.slider-wrapper{
+  clear: left;
+  width:100%;
+  margin: 0 auto;
+}
+
+/*img{
+  max-height: 246px
+}*/
+/*ここまでがスライダーの設定*/
+
+/*新着情報の設定*/
+#news{
+  width: 63%;
+  float:left;
+  margin: 0 0.5% 5px 1%;
+  border: none;
+  height: 450px;
+}
+
+#news ul{
+  height: 400px;
+  overflow-y: scroll;
+  /*list-style: disc inside;*/
+  padding-left: 5px;
+}
+
+.glyphicon{
+  font-size: 14px;
+  top: 0;
+}
+
+#container #news h3{
+  margin-top: 0px;
+}
+
+#news h2{
+  position: relative;
+  line-height: 1.0;
+  padding: 5px;
+  border-left: 5px solid #ae2b2b;
+  margin-bottom: 10px;
+}
+
+#news h2:after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid gray;
+}
+/*ここまでが新着情報の設定*/
+
+/*ツイートの設定*/
+#tweet{
+  width: 34%;
+  margin: 0 1% 5px 0;
+  float: right;
+  border: none;
+  height: 450px;
+}
+
+#container #tweet h2{
+  margin-top: 0px;
+}
+
+.twitter-timeline{
+  height: 440px !important;
+}
+/*ここまでがツイートの設定*/
+
+/*画面サイズの違いによる設定*/
+#toggle{
+   display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    #container{
+      width: 100%;
+    }
+    
+      #menu li{
+      width: 25%;
+      border-bottom: 1px solid #444;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    #sitemap{
+      display: none;
+    }
+    #menu{
+      display: none;
+    }
+    #menu li{
+      width: 100%;
+    }
+    #toggle{
+      display: block;
+      position: relative;
+      width: 100%;
+      background: #222;
+    }
+    #toggle a{
+      display: block;
+      position: relative;
+      padding: 12px 0 10px;
+      border-bottom: 1px solid #444;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+    }
+    #toggle:before{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      background: #fff;
+    }
+    #toggle a:before, #toggle a:after{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      width: 20px;
+      height: 4px;
+      background: #222;
+    }
+    #toggle a:before{
+      margin-top: -6px;
+    }
+    #toggle a:after{
+      margin-top: 2px;
+    }
+  }
